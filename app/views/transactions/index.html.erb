@@ -1,0 +1,35 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Investors</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Number</th>
+      <th>Investment</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @transactions.each do |transaction| %>
+      <tr>
+        <td><%= transaction.name %></td>
+        <td><%= transaction.email %></td>
+        <td><%= transaction.number %></td>
+        <td><%= Investment.find(transaction.investment_id).title %></td>
+        <td>
+          <%= link_to "Show more", transaction %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+<%
+=begin%>
+ <%= link_to "New transaction", new_transaction_path %> 
+<%
+=end%>

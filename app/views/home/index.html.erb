@@ -1,0 +1,172 @@
+<div class="homepage-container">
+  <div class="image-container">
+    <%= image_tag "banner-nafaka4.jpg", class: "background-image" %>
+    <div class="overlay-text">
+      <h1>Welcome to Nafaka Platform</h1>
+<p>Empowering agriculture across Africa through micro-investments.</p>
+<p>Join us in this journey of empowering farmers across Africa with alternative funding sources.</p>
+
+      <%= link_to "Browse Investments", investments_path, class: "btn btn-primary" %>
+    </div>
+  </div>
+</div>
+<br />
+
+<hr />
+
+
+<div class="text-center">
+  <h1 style="font-size: 46px;">Check our Projects</h1>
+  
+</div>
+
+<% farmer_names = [
+        "Wanjohi",
+        "Tola",
+        "Adensami",
+        "Otieno",
+        "Wambui",
+        "Wanyama",
+        "Juma",
+        "Rashid",
+        "Trevor",
+        "Mandela"
+    ] %>
+
+<% locations = [
+  "Kenya",
+  "Nigeria",
+  "Ghana",
+  "Uganda",
+  "Kenya",
+  "Kenya",
+  "Tanzania",
+  "Tanazania",
+  "South Africa",
+  "South Africa"
+] %>
+
+
+<div class="text-center">
+  
+</div>
+
+<div class="row">
+  <% Investment.all.take(3).each_with_index do |investment, index| %>
+    <div class="col-md-4">
+      <div class="card">
+        <%= link_to investment_path(investment) do %>
+          <%= image_tag investment.image_url, class: "card-img-top fixed-size" %>
+        <% end %>
+        <div class="card-body">
+          <h5 class="card-title"><%= investment.title %></h5>
+          <p class="card-text"><%= investment.description %></p>
+          <p class="card-text"><%= number_to_currency(investment.amount) %></p>
+          <p class="card-text farmer">
+          <% location = locations[index] %>
+          <%= location %>
+          </p>
+          <p class="card-text">
+            <% farmer_name = farmer_names[index] %>
+            <%= farmer_name %>
+            <span class="farmer">Verified</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<br />
+<div class="text-center">
+  <%= link_to "View More", investments_path, class: "btn btn-primary" %>
+</div>
+<br />
+<br />
+
+<hr />
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <h2 class="text-center">How it Works</h2>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Onboarding of Projects</h3>
+              <p class="card-text">Nafaka outsources for agricultural projects that need funding, do the required DUE DILIGENCE and post them on the platform.</p>
+              <i class="fa-solid fa-tractor fa-4x"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Investors Browse Projects</h3>
+              <p class="card-text">Investors browse through the projects, read all the relevant information and choose the ones they want to invest in.</p>
+              <i class="fa-solid fa-users fa-4x"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Investors Make Payments</h3>
+              <p class="card-text">Investors make payments to the Nafaka wallet using the Chimoney API.</p>
+              <i class="fa-solid fa-money-bill-1-wave fa-4x"></i>
+            </div>
+          </div>
+        </div>
+      
+
+      
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Nafaka Releases Funds to Farmers</h3>
+              <p class="card-text">Nafaka releases funds to farmers in bits and pieces as the milestones are met.</p>
+              <i class="fa-solid fa-handshake fa-4x"></i>
+            </div>
+          </div>
+        </div>
+      
+
+      
+        <div class="col-sm-4">
+          <div class="card">
+  <div class="card-body">
+    <h3 class="card-title">Investors Receive Regular SMS Updates</h3>
+    <p class="card-text">Investors will receive regular SMS updates on the progress of their projects. For example, you may receive an SMS update each time a milestone is reached or when a payment is made.</p>
+    <i class="fa-solid fa-sms fa-4x"></i>
+  </div>
+</div>
+        </div>
+      
+
+      
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Investors Receive Payouts</h3>
+              <p class="card-text">Once the project is completed, Nafaka issues payouts to investors via Chimoney API.</p>
+              <i class="fa-solid fa-dollar-sign fa-4x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<section class="about-section">
+  <div class="container">
+    <h2 class="text-center">About Us</h2>
+    <p>Nafaka is dedicated to fostering innovation in agriculture. Our platform connects visionary farmers with investors like you who share a passion for sustainable food production. With a team of experienced experts and a commitment to transparency, we're changing the way agriculture is funded and creating opportunities for growth.</p>
+  </div>
+</section>
+<br />
+<br />

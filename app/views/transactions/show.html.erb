@@ -1,0 +1,19 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @transaction %>
+
+<div>
+  <%= link_to send_payout_transaction_path(@transaction), class: 'btn btn-outline-success' do %>
+  Send Payout
+<% end %>
+ |
+  <%= link_to "Back to transactions", transactions_path, class: "btn btn-outline-primary" %>
+
+  <%
+=begin%>
+ <%= button_to "Destroy this transaction", @transaction, method: :delete %> 
+<%
+=end%>
+</div>
+<br />
+<br />

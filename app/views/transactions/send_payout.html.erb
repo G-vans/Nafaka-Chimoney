@@ -1,0 +1,10 @@
+<h1>Send Payout</h1>
+
+<%= form_tag process_payout_transaction_path(@transaction), method: :post do %>
+  <div class="form-group">
+    <%= label_tag 'amount', 'Amount:' %>
+    <%= number_field_tag 'amount', nil, class: 'form-control' %>
+  </div>
+
+  <%= submit_tag 'Send Payout', class: 'btn btn-primary' %>
+<% end %>
