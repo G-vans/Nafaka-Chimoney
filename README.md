@@ -14,8 +14,7 @@ Nafaka Platform makes it easy for individuals from one African country to invest
 
 ## Team
 
-Team Name is Nafaka.
-
+Team Name is **Nafaka**.
 
 ## Table of Contents
 
@@ -24,6 +23,7 @@ Team Name is Nafaka.
   - [Installation](#installation)
 - [Usage](#usage)
 - [GitHub Repository](#github-repository)
+- [Screenshots](#screenshots)
 - [Chimoney's API Experiences](#chimoneys-api-experiences)
 - [Contributing](#contributing)
 - [License](#license)
@@ -92,6 +92,29 @@ To use the platform as an Investor:
 ## GitHub Repository
 
 You can find the project's source code on GitHub: [GitHub Repository](https://github.com/G-vans/Nafaka-Chimoney)
+
+## Screenshots
+
+Here are some screenshots of the Nafaka Platform:
+
+   ### Normal User(Investor)
+1. ![Screenshot 1](app/assets/images/screenshot1.jpeg)
+2. ![Screenshot 2](app/assets/images/screenshot2.jpeg)
+3. ![Screenshot 3](app/assets/images/screenshot3.jpeg)
+4. ![Screenshot 4](app/assets/images/screenshot4.jpeg)
+5. ![Screenshot 5](app/assets/images/screenshot5.jpeg)
+6. ![Screenshot 6](app/assets/images/screenshot6.jpeg)
+7. ![Screenshot 7](app/assets/images/screenshot7.jpeg)
+
+   ### Nafaka Admin
+8. ![Screenshot 8](app/assets/images/screenshot8.jpeg)
+9. ![Screenshot 9](app/assets/images/screenshot9.jpeg)
+10. ![Screenshot 10](app/assets/images/screenshot10.jpeg)
+11. ![Screenshot 11](app/assets/images/screenshot11.jpeg)
+
+These screenshots provide a glimpse of the Nafaka Platform's user interface and functionality.
+
+
 
 ## Chimoney's API Experiences
 
