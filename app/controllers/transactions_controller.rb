@@ -72,6 +72,10 @@ class TransactionsController < ApplicationController
     redirect_to @transaction, notice: 'Payout sent successfully'
   end
 
+  def success
+    
+  end
+
   # PATCH/PUT /transactions/1 or /transactions/1.json
   def update
     respond_to do |format|
